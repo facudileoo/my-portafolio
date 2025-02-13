@@ -1,0 +1,38 @@
+*{
+    --color-letter: #dddddd;
+    --bgc-fondo: #010101;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 100px;
+}
+
+.container-grid-blog{
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    padding: 80px 0;
+    color: var(--color-letter);
+    gap: 20px;
+}
+
+.box-blog-img{
+    width: 400px;
+    height: fit-content;
+}
+
+.container-text-blog{
+    width: 400px;
+}
+
+.box{
+    background-color: #777777;
+    width: 400px;
+    height: 400px;
+}

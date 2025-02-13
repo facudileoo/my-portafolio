@@ -1,0 +1,115 @@
+*{
+    --color-letter: #dddddd;
+    --bgc-fondo: #010101;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.trayectoria{
+    display: flex;
+    padding: 100px 0;
+    flex-direction: column;
+    background-image: url('../public/img/fondo-trayectoria.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container-linea{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.linea-trayectoria, .linea-trayectoria-final{
+    width: 100px;
+    padding: 2px 0;
+    background-color: var(--color-letter);
+    position: relative;
+}
+
+.linea-trayectoria::before{
+    content: '';
+    background-color: var(--color-letter);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: -3px;
+    right: -15px;
+}
+
+.linea-1::after{
+    content: 'inicio';
+    background-color: var(--color-letter);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: -3px;
+    left: -10px;
+    color: var(--color-letter);
+    padding: 5px 0 0 0;
+    text-indent: -12px;
+}
+
+.linea-1::before{
+    content: 'html';
+    color: #e35f26;
+    padding: 5px 0 0 0;
+    text-indent: -10px;
+    background-color: #e35f26;
+}
+
+.linea-2::before{
+    content: 'css';
+    color: #61dafb;
+    padding: 5px 0 0 0;
+    text-indent: -5px;
+    background-color: #61dafb;
+}
+
+.linea-3::before{
+    content: 'javascript';
+    color: #f7df1e;
+    padding: 5px 0 0 0;
+    text-indent: -25px;
+    background-color: #f7df1e;
+}
+
+.linea-4::before{
+    content: 'react';
+    color: #0089eb;
+    padding: 5px 0 0 0;
+    text-indent: -12px;
+    background-color: #0089eb;
+}
+
+.linea-5::before{
+    content: 'python';
+    color: #ffd43b;
+    padding: 5px 0 0 0;
+    text-indent: -18px;
+    background-color: #006cc4;
+}
+
+.linea-6::before{
+    content: 'node';
+    color: #339933;
+    padding: 5px 0 0 0;
+    text-indent: -12px;
+    background-color: #339933;
+}
+
+
+.linea-7::before{
+    content: 'sql';
+    color: #007db8;
+    padding: 5px 0 0 0;
+    text-indent: -5px;
+    background-color: #007db8;
+}

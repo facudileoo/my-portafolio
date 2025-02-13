@@ -1,0 +1,61 @@
+*{
+    --color-letter: #dddddd;
+    --bgc-fondo: #010101;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+    position: relative;
+}
+
+.container-info-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: var(--color-letter);
+}
+
+.container-info-contacto p{
+    font-size: 1.3rem;
+}
+
+.btn-whatsapp{
+    color: var(--color-letter);
+    background-color: #25D366;
+    padding: 5px 12px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.btn-whatsapp:hover{
+    color: var(--color-letter);
+}
+
+.container-redes-contacto{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contacto-link, .contacto-link:hover{
+    color: var(--color-letter);
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.contacto-link:active{
+    color: #aaaaaa;
+}

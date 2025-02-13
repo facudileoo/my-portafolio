@@ -1,0 +1,88 @@
+*{
+    --color-letter: #dddddd;
+    --bg-color: #010101;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.header{
+    background-image: url('../public/img/fondo-header.png');
+    height: 704px;
+    background-size: cover;
+    background-position: center;
+}
+.header-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav a{
+    color: var(--color-letter);
+    transition: color 1s ease;
+}
+
+.header-nav a:hover{
+    color: color-mix(in srgb, var(--color-letter), #aaaaaa);
+}
+
+.container-info{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.container-info .container{
+    display: flex;
+    position: relative;
+    top: 130px;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: var(--color-letter);
+    font-size: 40px;
+}
+
+.container-info h2{
+    color: var(--color-letter);
+    position: relative;
+    top: 150px;
+}
+
+
+.container-navlink{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link-github, .link-instagram{
+    color: var(--color-letter);
+    padding: 15px;
+    border-radius: 100%;
+    font-family: Georgia;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #cccccc;
+}
+.separador{
+    background: linear-gradient(
+        to bottom,
+        #080808   /* Último color al 100% */
+        #050505     /* Cuarto color al 75% */
+        #040404     /* Tercer color al 50% */
+        #030303     /* Segundo color al 25% */
+        #010101      /* Color inicial al 0% */
+      );
+      
+}
